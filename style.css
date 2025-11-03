@@ -266,30 +266,42 @@ padding: 50px;
 }
 
 .formulario_caixa {
-    background-color: var(--cor-titulo);
+    background-color: var(--cor-primaria);
     height: 20px;
-    color: var(--cor-terciaria);
+    color: var(--cor-hover);
+    border-radius: 20px;
+    border: 2px solid var(--cor-titulo);
+    padding: 10px;
 
 }
 
-.formulario_caixa2 {
-    background-color: var(--cor-titulo);
-    color: var(--cor-terciaria);
+.formulario_caixa2,
+.formulario_botao {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid var(--cor-titulo);
+}
+
+.formulario_botao:hover {
+    background-color: var(--cor-secundaria);
+    transition-duration: 0.05s;
+    color: var(--cor-primaria);
 }
 
 .formulario__campo {
     border: var(--cor-primaria);
-    border-style: none;
+    padding: 10px;
+
 }
 
 .mensagem-erro {
     color: var(--cor-terciaria);
+    font-style: italic;
+    font-weight: 600;
 }
 
-.campo__escrita--erro {
-    border: 2px solid var(--cor-terciaria);
-    font: var(--fonte-secundaria);
-}
 
 
 /* AULA DE FLEXBOX ???WWW*/
