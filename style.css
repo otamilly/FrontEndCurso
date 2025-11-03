@@ -277,6 +277,19 @@ padding: 50px;
     color: var(--cor-terciaria);
 }
 
+.formulario__campo {
+    border: var(--cor-primaria);
+    border-style: none;
+}
+
+.mensagem-erro {
+    color: var(--cor-terciaria);
+}
+
+.campo__escrita--erro {
+    border: 2px solid var(--cor-terciaria);
+    font: var(--fonte-secundaria);
+}
 
 
 /* AULA DE FLEXBOX ???WWW*/

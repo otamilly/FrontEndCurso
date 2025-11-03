@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <section class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="/index.html">Home   </a>
+            <a class="cabecalho_menu_link" href="/Pages/sobremim.html">Sobre mim     </a>
+            <a class="cabecalho_menu_link" href="/Pages/Cadastro.html">Cadastro    </a>
+            <a class="cabecalho_menu_link" href="/Pages/produtos.html">Produtos    </a>
+            <a class="cabecalho_menu_link" href="/Pages/falecomigo.html">Fale Comigo   </a>
+            <a class="cabecalho_menu_link" href="/Pages/maisvendidos.html">Mais Vendidos  </a>
+        </nav>
+        </section>
+    
+</header>
+    <main class="formulario">
+<h1 class="formulario_titulo"> Formulário de Cadastro </h1>
+<div class="formulario_preencher"> 
+<form action="GET">
+    <fieldset class="formulario__campo"> 
+    <label>Nome:</label><br>
+    <input class="formulario_caixa" required type="text" name="txtNome" size="50"
+    title="Digite seu nome" maxlength="50" minlength="3"> <br><br><span class="mensagem-erro"></span> </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Escolha sua senha:</label><br>
+    <input class="formulario_caixa" required type="password" name="txtSENHA" size="50"
+    title="Digite sua Senha" maxlength="8"><br><br><span class="mensagem-erro"></span>
+    </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>CPF:</label><br>
+    <input class="formulario_caixa" required type="txt" name="txtCPF" id="txtCPF" size="50"
+    title="Digite seu CPF" maxlength="11" minlength="11"><br><br><span class="mensagem-erro"></span>
+    </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Data de Nascimento</label> <br>
+    <input class="formulario_caixa" required type="date" name="txtDATA" maxlength="50"> <br><br><span class="mensagem-erro"></span>
+    </fieldset>
+    
+    <fieldset class="formulario__campo"> 
+    <label>E-mail:</label><br>
+    <input class="formulario_caixa" required type="email" name="txtEmail" size="50"><br><br><span class="mensagem-erro"></span>
+    </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Endereço:</label><br>
+    <input class="formulario_caixa" required type="text" name="txtEndereco" size="50"><br><br><span class="mensagem-erro"></span>
+    </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Selecione a área de Interesse</label><br>
+    <input class="formulario_caixa" required type="checkbox" name="chkQuimica" value="org"> Orgânica
+    <input class="formulario_caixa" required type="checkbox" name="chkQuimica" value="an"> Analítica
+    <input class="formulario_caixa" required type="checkbox" name="chkQuimica" value="fq"> Físico-Química
+    <input class="formulario_caixa" required type="checkbox" name="chkQuimica" value="ger"> Geral
+    <br><br><span class="mensagem-erro"></span>
+    </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Deseja receber novidades no e-mai? </label><br>
+    <select required name="optSimenao">
+        <option class="formulario_caixa2" value="Sim"> Sim </option>
+        <option class="formulario_caixa2" value="Nao"> Não </option>
+        </select><br><br><span class="mensagem-erro"></span>
+        </fieldset>
+
+    <fieldset class="formulario__campo"> 
+    <label>Faça sua Sugestão:</label>    <br>
+    <textarea class="formulario_caixa2" name="txtSUGESTAO" rows="10" cols="50"></textarea>    <br><br>
+    </fieldset>
+
+    <input class="formulario_caixa2" type="submit" value="Enviar">
+    <input class="formulario_caixa2" type="reset" value="Limpar">
+</form>   
+</div>
+
+
+ </main>
+
+<footer>
+    <section class="rodape">
+        Desenvolvido por Tamilly
+    </section>
+</footer>
+<script src="/Js/script.js" type="module"></script>
+<!-- para comentários ctrl+; -->
+ <!-- SECTION N FAZ DENTRO DE SECTION, MAS DIV FAZ DENTRO DE DIV -->
+
+</body>
+</html>
