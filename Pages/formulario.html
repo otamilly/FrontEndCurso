@@ -32,7 +32,7 @@
     <fieldset class="formulario__campo"> 
     <label>Escolha sua senha:</label><br>
     <input class="formulario_caixa" required type="password" name="txtSENHA" size="50"
-    title="Digite sua Senha" maxlength="8"><br><span class="mensagem-erro"></span>
+    title="Digite sua Senha" minlength="6"><br><span class="mensagem-erro"></span>
     </fieldset>
 
     <fieldset class="formulario__campo"> 
@@ -58,16 +58,17 @@
 
     <fieldset class="formulario__campo"> 
     <label>Selecione a área de Interesse</label><br>
-    <input class="formulario_check" required type="checkbox" name="chkQuimica" value="org"> Orgânica
-    <input class="formulario_check" required type="checkbox" name="chkQuimica" value="an"> Analítica
-    <input class="formulario_check" required type="checkbox" name="chkQuimica" value="fq"> Físico-Química
-    <input class="formulario_check" required type="checkbox" name="chkQuimica" value="ger"> Geral
+    <input class="caixa_check" required type="checkbox" name="chkQuimica" value="org"> Orgânica
+    <input class="caixa_check" required type="checkbox" name="chkQuimica" value="an"> Analítica
+    <input class="caixa_check" required type="checkbox" name="chkQuimica" value="fq"> Físico-Química
+    <input class="caixa_check" required type="checkbox" name="chkQuimica" value="ger"> Geral
     <br><span class="mensagem-erro"></span>
     </fieldset>
+    
 
     <fieldset class="formulario__campo"> 
     <label>Deseja receber novidades no e-mai? </label><br>
-    <select required name="optSimenao">
+    <select class="formulario_caixa2" required name="optSimenao">
         <option class="formulario_caixa2" value="Sim"> Sim </option>
         <option class="formulario_caixa2" value="Nao"> Não </option>
         </select><br><span class="mensagem-erro"></span>
@@ -80,6 +81,7 @@
 
     <input class="formulario_botao" type="submit" value="Enviar">
     <input class="formulario_botao" type="reset" value="Limpar">
+    <span class="mensagem-erro"></span>
 </form>   
 </div>
 
