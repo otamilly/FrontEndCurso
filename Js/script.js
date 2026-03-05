@@ -77,3 +77,4 @@ function verificaCampo(campo){
         mensagemErro.textContent = "";
     }
 }
+
